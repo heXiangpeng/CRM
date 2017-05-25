@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroud"
+    tools:context="huayuan.com.crm.activity.RegisterActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear_user"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="130dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账 号:"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/editwithborder"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_vercode"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/linear_user"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验 证:"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/editwithborder"
+            android:layout_marginRight="10dp"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="发送验证"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="#39a89d"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_pass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/linear_vercode"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密 码:"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/editwithborder"
+
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确  认"
+        android:layout_below="@+id/linear_pass"
+        android:textSize="20sp"
+        android:background="#00ffffff"
+        android:textColor="#fff"
+        />
+
+    <Button
+        android:id="@+id/btn_register"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取  消"
+        android:layout_below="@+id/btn_login"
+        android:textSize="20sp"
+        android:background="#00ffffff"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我已阅读并同意服务条款"
+        android:layout_alignParentBottom="true"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        />
+
+
+
+
+</RelativeLayout>
